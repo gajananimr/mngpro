@@ -1,9 +1,9 @@
 {
-  "name": "angular2-sample-app",
+  "name": "mngpro",
   "version": "0.0.0",
-  "description": "Extended seed for Angular 2 apps",
+  "description": "Sample ag2 demo",
   "repository": {
-    "url": "https://github.com/AngularShowcase/angular2-sample-app"
+    "url": "https://github.com/gajananimr/mngpro.git"
   },
   "scripts": {
     "build.dev": "gulp build.dev",
@@ -24,7 +24,7 @@
     "test": "gulp test",
     "tsd": "tsd"
   },
-  "author": "Minko Gechev <mgechev>",
+  "author": "",
   "license": "MIT",
   "devDependencies": {
     "async": "^1.4.2",

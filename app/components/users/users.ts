@@ -29,12 +29,12 @@ import {LoadingBtn} from '../../directives/loading_btn';
 export class UsersCmp implements OnActivate {
   public loading:boolean = true;
   constructor(public userService: UserService) {
-    this.userService
-      .getUsers()
-      .then(users => {
+    //this.userService
+    //  .getUsers()
+    //  .then(users => {
         // To be removed when component activation will work.
-        this.loading = false;
-      });
+    //    this.loading = false;
+  //    });
   }
   eventHandler(value: any) {
     console.log(`Example of handling custom events: ${value}`);

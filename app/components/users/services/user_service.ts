@@ -3,8 +3,8 @@ import {Http} from 'angular2/http';
 import 'rxjs/add/operator/map';
 import {IUser} from './interfaces';
 
-const SEED_URL = 'http://api.randomuser.me/?results=10&seed=885ad8c4404e07ea03';
-const URL = 'http://api.randomuser.me/?results=10';
+const getUserUrl = 'http://getUserUrl';
+const getMoreUserUrl = 'getMoreUserUrl';
 
 export {IUser} from './interfaces';
 @Injectable()
@@ -20,11 +20,11 @@ export class UserService {
     if (this.usersCache.length) {
       return new Promise((resolve) => resolve(this.usersCache));
     } else {
-      return this.fetch(SEED_URL);
+      return this.fetch(getUserUrl);
     }
   }
   getMoreUsers(): Promise<Array<IUser>> {
-    return this.fetch(URL);
+    return this.fetch(getMoreUserUrl);
   }
   getUser(username): Promise<IUser> {
     return this.findUserByUsername(username)

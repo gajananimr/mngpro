@@ -15,6 +15,7 @@ export class UserDetailsCmp implements OnInit {
     this.username = routeParams.params.username;
   }
   ngOnInit() {
+    alert('this is init');
     this.userService
       .getUser(this.username)
       .then(user => this.user = user);
